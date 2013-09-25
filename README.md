@@ -19,7 +19,7 @@ O nome e versão do sistema operacional também é verificado.
 
 Como o programa é feito?
 ------------------------
-Esta aplicação é desenvolvida em **"Delphi XE4 Architect"** usando o componente __opensource__ **ZipMaster** (www.delphizip.org).
+Esta aplicação é desenvolvida em **"Delphi XE4 Architect"**.
 
 Licença deste aplicativo
 ------------------------
