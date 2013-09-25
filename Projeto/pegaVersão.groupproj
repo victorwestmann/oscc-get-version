@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7BD3A5BF-CD1B-4515-8B1D-4FDE039E3FC1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="pegaVersao.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="pegaVersao">
+        <MSBuild Projects="pegaVersao.dproj"/>
+    </Target>
+    <Target Name="pegaVersao:Clean">
+        <MSBuild Projects="pegaVersao.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pegaVersao:Make">
+        <MSBuild Projects="pegaVersao.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="pegaVersao"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="pegaVersao:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="pegaVersao:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
