@@ -1,7 +1,7 @@
 Pega Versão
 ==========
 
-Este programa foi criado com a intenção de facilitar a verificação de versões da aplicação OpenScape ContactCenter V8 da Siemens Enterprise.
+Este programa foi criado com a intenção de facilitar a verificação de versões da aplicação **OpenScape ContactCenter** V7/+ da **Siemens Enterprise**.
 
 Quais versões são verificadas?
 ------------------------------
@@ -9,11 +9,13 @@ As versões dos arquivos dos aplicativos (atributo "versão" do arquivo).
 
 Quais programas são verificados?
 --------------------------------
-São verificados os programas "Manager" (tmcmain.exe), "Client Desktop" (tacmain.exe), e "Tugmain" (tugmain.exe).
-O nome e versão do sistema operacional também é verificada.
+São verificados os programas **"Manager"** (tmcmain.exe), **"Client Desktop"** (tacmain.exe), e **"Tugmain"** (tugmain.exe).
+O nome e versão do sistema operacional também é verificado.
 
 Como o programa é feito?
 ------------------------
-Esta aplicação é feita em "Delphi XE4 Arthitect" usando o componente ZipMaster (www.delphizip.org).
+Esta aplicação é desenvolvida em **"Delphi XE4 Architect"** usando o componente __opensource__ **ZipMaster** (www.delphizip.org).
 
-
+Licença deste aplicativo
+------------------------
+GPL v3.
