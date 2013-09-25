@@ -1,7 +1,7 @@
 Pega Versão
 ==========
 
-Este programa foi criado com a intenção de facilitar a verificação de versões da aplicação **OpenScape ContactCenter** V7/+ da **Siemens Enterprise**.
+Este programa verificar as versões dos programas da suíte **OpenScape ContactCenter** V7/+ da **Siemens Enterprise**.
 
 Quais versões são verificadas?
 ------------------------------
