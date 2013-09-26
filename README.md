@@ -1,26 +1,31 @@
-Pega Versão
-==========
+OSCC Get Version
+================
 
-Este programa verifica as versões dos programas da suíte **OpenScape ContactCenter** V7/+ da **Siemens Enterprise**.
 
-Quais versões são verificadas?
-------------------------------
-As versões dos arquivos dos aplicativos (atributo "versão" do arquivo).
+Purpose
+-------
 
-Quais programas são verificados?
---------------------------------
-São verificados os programas:
+To gather the name and version of the current Operating System as well as the programs within the OSCC software suite. 
+They are:
 
-* **"Manager"** (tmcmain.exe),
-* **"Client Desktop"** (tacmain.exe), e
-* **"Tugmain"** (tugmain.exe).
+* "Manager" (tmcmain.exe),
+* "Tugmain" (tugmain.exe),
+* "Client Desktop" (tacmain.exe).
 
-O nome e versão do sistema operacional também é verificado.
+Where was this program written?
+-------------------------------
+This program was written using Pascal language with the RAD Delphi XE4 Architect IDE.
 
-Como o programa é feito?
-------------------------
-Esta aplicação é desenvolvida em **"Delphi XE4 Architect"**.
+Why was this built?
+-------------------
+To simplify and speedup the process to check current Operating System version and client (alongside server) application(s) version. ;-)
 
-Licença deste aplicativo
-------------------------
+Acronyms
+--------
+OSCC stands for **OpenScape ContactCenter** which is a **Siemens** call-center software suite product.
+IDE stands for Integrated Development Environment.
+RAD stands for Rapid Application Development.
+
+Program license
+---------------
 GPL v3.
