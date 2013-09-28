@@ -2,58 +2,68 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'OSCC Get Version'
-  ClientHeight = 407
-  ClientWidth = 527
+  ClientHeight = 327
+  ClientWidth = 519
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -15
+  Font.Height = -12
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
   OnCreate = FormCreate
   DesignSize = (
-    527
-    407)
-  PixelsPerInch = 120
-  TextHeight = 18
+    519
+    327)
+  PixelsPerInch = 96
+  TextHeight = 14
   object lblTituloNotepad: TLabel
-    Left = 24
-    Top = 327
-    Width = 176
-    Height = 18
+    Left = 19
+    Top = 277
+    Width = 148
+    Height = 14
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
+    Anchors = [akLeft, akBottom]
     Caption = 'Current notepad version is:'
+    ExplicitTop = 254
   end
   object lblNotepad: TLabel
-    Left = 27
-    Top = 354
-    Width = 176
-    Height = 18
+    Left = 19
+    Top = 298
+    Width = 148
+    Height = 14
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Align = alCustom
+    Anchors = [akLeft, akBottom]
     Caption = 'lblNotepad'
-    ExplicitLeft = 24
-    ExplicitTop = 351
+    ExplicitTop = 275
   end
   object lblAutor: TLabel
-    Left = 329
-    Top = 371
-    Width = 174
-    Height = 18
+    Left = 365
+    Top = 299
+    Width = 145
+    Height = 14
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Anchors = [akRight, akBottom]
     Caption = 'Made by Victor Westmann'
-    ExplicitLeft = 504
-    ExplicitTop = 438
+    ExplicitLeft = 256
+    ExplicitTop = 289
   end
   object imgIcone: TImage
-    Left = 10
-    Top = 4
-    Width = 83
-    Height = 82
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
+    Left = 20
+    Top = 20
+    Width = 64
+    Height = 64
     Picture.Data = {
       0954506E67496D61676589504E470D0A1A0A0000000D49484452000000400000
       00400806000000AA6971DE0000001974455874536F6674776172650041646F62
@@ -307,122 +317,88 @@ object frmPrincipal: TfrmPrincipal
       4E44AE426082}
   end
   object lbeSO: TLabeledEdit
-    Left = 20
-    Top = 148
-    Width = 385
-    Height = 26
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
+    Left = 16
+    Top = 113
+    Width = 408
+    Height = 22
     Anchors = [akLeft, akTop, akRight]
-    EditLabel.Width = 134
-    EditLabel.Height = 18
-    EditLabel.Margins.Left = 4
-    EditLabel.Margins.Top = 4
-    EditLabel.Margins.Right = 4
-    EditLabel.Margins.Bottom = 4
+    EditLabel.Width = 110
+    EditLabel.Height = 14
     EditLabel.Caption = 'Operating System'
     EditLabel.Font.Charset = DEFAULT_CHARSET
     EditLabel.Font.Color = clWindowText
-    EditLabel.Font.Height = -15
+    EditLabel.Font.Height = -12
     EditLabel.Font.Name = 'Tahoma'
     EditLabel.Font.Style = [fsBold]
     EditLabel.ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 557
+    ExplicitWidth = 299
   end
   object lbeTugmain: TLabeledEdit
-    Left = 24
-    Top = 256
-    Width = 125
-    Height = 26
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
+    Left = 20
+    Top = 207
+    Width = 97
+    Height = 22
     Anchors = [akLeft]
-    EditLabel.Width = 63
-    EditLabel.Height = 18
-    EditLabel.Margins.Left = 4
-    EditLabel.Margins.Top = 4
-    EditLabel.Margins.Right = 4
-    EditLabel.Margins.Bottom = 4
+    EditLabel.Width = 52
+    EditLabel.Height = 14
     EditLabel.Caption = 'Tugmain'
     EditLabel.Font.Charset = DEFAULT_CHARSET
     EditLabel.Font.Color = clWindowText
-    EditLabel.Font.Height = -15
+    EditLabel.Font.Height = -12
     EditLabel.Font.Name = 'Tahoma'
     EditLabel.Font.Style = [fsBold]
     EditLabel.ParentFont = False
     TabOrder = 1
-    ExplicitTop = 272
+    ExplicitTop = 188
   end
   object lbeClientDesktop: TLabeledEdit
-    Left = 378
-    Top = 256
-    Width = 125
-    Height = 26
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
+    Left = 327
+    Top = 207
+    Width = 97
+    Height = 22
     Anchors = [akRight]
-    EditLabel.Width = 109
-    EditLabel.Height = 18
-    EditLabel.Margins.Left = 4
-    EditLabel.Margins.Top = 4
-    EditLabel.Margins.Right = 4
-    EditLabel.Margins.Bottom = 4
+    EditLabel.Width = 90
+    EditLabel.Height = 14
     EditLabel.Caption = 'Client Desktop'
     EditLabel.Font.Charset = DEFAULT_CHARSET
     EditLabel.Font.Color = clWindowText
-    EditLabel.Font.Height = -15
+    EditLabel.Font.Height = -12
     EditLabel.Font.Name = 'Tahoma'
     EditLabel.Font.Style = [fsBold]
     EditLabel.ParentFont = False
     TabOrder = 2
+    ExplicitLeft = 291
+    ExplicitTop = 188
   end
   object lbeManager: TLabeledEdit
-    Left = 211
-    Top = 256
-    Width = 125
-    Height = 26
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
-    Anchors = [akLeft]
-    EditLabel.Width = 65
-    EditLabel.Height = 18
-    EditLabel.Margins.Left = 4
-    EditLabel.Margins.Top = 4
-    EditLabel.Margins.Right = 4
-    EditLabel.Margins.Bottom = 4
+    Left = 157
+    Top = 207
+    Width = 133
+    Height = 22
+    Anchors = [akLeft, akRight]
+    EditLabel.Width = 53
+    EditLabel.Height = 14
     EditLabel.Caption = 'Manager'
     EditLabel.Font.Charset = DEFAULT_CHARSET
     EditLabel.Font.Color = clWindowText
-    EditLabel.Font.Height = -15
+    EditLabel.Font.Height = -12
     EditLabel.Font.Name = 'Tahoma'
     EditLabel.Font.Style = [fsBold]
     EditLabel.ParentFont = False
     TabOrder = 3
+    ExplicitWidth = 97
   end
   object btnCopiarSO: TButton
-    Left = 417
-    Top = 143
-    Width = 96
-    Height = 32
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
-    Anchors = [akRight]
+    Left = 433
+    Top = 111
+    Width = 75
+    Height = 25
+    Anchors = [akTop, akRight]
     Cancel = True
     Caption = 'Ctrl + C'
     TabOrder = 4
     OnClick = btnCopiarSOClick
-    ExplicitLeft = 585
-    ExplicitTop = 153
+    ExplicitLeft = 324
   end
 end
