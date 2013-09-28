@@ -1,5 +1,5 @@
 ﻿[]
-Coordinates=219,87,66,58
+Coordinates=160,183,60,58
 
 [lblTituloNotepad]
 Coordinates=73,10,108,58
@@ -9,10 +9,4 @@ Coordinates=19,87,58,58
 
 [lblNotepad]
 Coordinates=78,87,76,58
-
-[lblTituloTeste]
-Coordinates=219,87,92,58
-
-[lblTeste]
-Coordinates=160,183,60,58
 

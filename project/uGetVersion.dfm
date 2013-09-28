@@ -2,7 +2,7 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'OSCC Get Version'
-  ClientHeight = 474
+  ClientHeight = 432
   ClientWidth = 702
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,19 +15,19 @@ object frmPrincipal: TfrmPrincipal
   OnCreate = FormCreate
   DesignSize = (
     702
-    474)
+    432)
   PixelsPerInch = 120
   TextHeight = 18
   object lblTituloNotepad: TLabel
-    Left = 35
-    Top = 224
+    Left = 220
+    Top = 336
     Width = 157
     Height = 18
     Caption = 'A vers'#227'o do Notepad '#233':'
   end
   object lblNotepad: TLabel
-    Left = 72
-    Top = 247
+    Left = 310
+    Top = 359
     Width = 67
     Height = 18
     Anchors = [akTop]
@@ -35,30 +35,17 @@ object frmPrincipal: TfrmPrincipal
   end
   object lblAutor: TLabel
     Left = 504
-    Top = 438
+    Top = 396
     Width = 174
     Height = 18
     Anchors = [akRight, akBottom]
     Caption = 'Made by Victor Westmann'
-  end
-  object lblTituloTeste: TLabel
-    Left = 271
-    Top = 224
-    Width = 155
-    Height = 18
-    Caption = 'Teste simulado de EXE:'
-  end
-  object lblTeste: TLabel
-    Left = 291
-    Top = 247
-    Width = 157
-    Height = 18
-    Caption = 'A vers'#227'o do Notepad '#233':'
+    ExplicitTop = 438
   end
   object imgBanner: TImage
     Left = 0
     Top = -1
-    Width = 629
+    Width = 513
     Height = 94
     Margins.Left = 4
     Margins.Top = 4
@@ -365,7 +352,7 @@ object frmPrincipal: TfrmPrincipal
       4E44AE426082}
   end
   object lbeSO: TLabeledEdit
-    Left = 10
+    Left = 20
     Top = 156
     Width = 557
     Height = 26
@@ -389,9 +376,9 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 0
   end
   object lbeTugmain: TLabeledEdit
-    Left = 10
-    Top = 309
-    Width = 197
+    Left = 24
+    Top = 272
+    Width = 150
     Height = 26
     Margins.Left = 4
     Margins.Top = 4
@@ -413,9 +400,9 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 1
   end
   object lbeClientDesktop: TLabeledEdit
-    Left = 481
-    Top = 309
-    Width = 197
+    Left = 427
+    Top = 272
+    Width = 150
     Height = 26
     Margins.Left = 4
     Margins.Top = 4
@@ -437,9 +424,9 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 2
   end
   object lbeManager: TLabeledEdit
-    Left = 240
-    Top = 309
-    Width = 197
+    Left = 227
+    Top = 272
+    Width = 150
     Height = 26
     Margins.Left = 4
     Margins.Top = 4
@@ -461,8 +448,8 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 3
   end
   object btnCopiarSO: TButton
-    Left = 597
-    Top = 154
+    Left = 589
+    Top = 153
     Width = 96
     Height = 32
     Margins.Left = 4

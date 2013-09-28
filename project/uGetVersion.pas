@@ -1,5 +1,28 @@
 unit uGetVersion;
 
+{===============================================================================
+Program created by
+
+\   \ /   /|__| _____/  |_  ___________
+ \   Y   / |  |/ ___\   __\/  _ \_  __ \
+  \     /  |  \  \___|  | (  <_> )  | \/
+   \___/   |__|\___  >__|  \____/|__|
+                   \/
+Date: 2013-09-07
+Purpose: Get file version from OSCC (OpenScape ContatCenter) programs:
+
+  Executable name     Program Name
+  --------------------------------
+  - Tugmain.exe       (tugmain)
+  - Tacmain.exe       (Client Desktop)
+  - Tmcmain.exe       (Manager)
+
+  (When installed) is generally found at:
+  C:\Program Files (x86)\Siemens\HiPath Procenter\
+===============================================================================}
+
+
+
 interface
 
 uses
@@ -12,8 +35,6 @@ type
     lblTituloNotepad: TLabel;
     lblNotepad: TLabel;
     lblAutor: TLabel;
-    lblTituloTeste: TLabel;
-    lblTeste: TLabel;
     lbeSO: TLabeledEdit;
     lbeTugmain: TLabeledEdit;
     lbeClientDesktop: TLabeledEdit;
@@ -36,9 +57,10 @@ implementation
 
 {$R *.dfm}
 
-{==============================================================================}
-{Função retirada de:
- http://www.delphitricks.com/source-code/files/get_the_version_of_a_file.html}
+{===============================================================================
+Function extracted from:
+http://www.delphitricks.com/source-code/files/get_the_version_of_a_file.html
+===============================================================================}
 
 function GetVersion(sFileName:string): string;
 var
@@ -63,7 +85,7 @@ begin
 end;
 {==============================================================================}
 
-{ Função para ler as variáveis de ambiente=====================================}
+{ Function to read environment variable========================================}
 function GetEnvVarValue(const VarName: string): string;
 var
   BufSize: Integer;  // buffer size required for value
@@ -84,7 +106,7 @@ begin
 end;
 {==============================================================================}
 
-{Função para expandir as variáveis de ambiente}
+{Function to expand environment variables======================================}
 function ExpandEnvVars(const Str: string): string;
 var
   BufSize: Integer; // size of expanded string
@@ -103,54 +125,52 @@ begin
     // Trying to expand empty string
     Result := '';
 end;
+{==============================================================================}
 
 
 procedure TfrmPrincipal.btnCopiarSOClick(Sender: TObject);
 begin
-  lbeSO.SelectAll;        {Seleciona todo o texto do 'Labeled Edit'}
-  lbeSO.CopyToClipboard;  {Copia tudo para o Clipboard}
+  lbeSO.SelectAll;        {Copy all text from the 'Labeled Edit'}
+  lbeSO.CopyToClipboard;  {Copy everything to the Clipboard}
 end;
 
 procedure TfrmPrincipal.FormCreate(Sender: TObject);
 var
-  path      : string; //Caminho dos executáveis!
-  hppcdir   : string; //Caminho dos executáveis!
-  tugmain   : string;
+  hppcdir   : string; //Executable Path!
 begin
   lbeSO.Text := TOSVersion.ToString;
   lblNotepad.Caption := GetVersion('c:\Windows\System32\notepad.exe');
   hppcdir := GetEnvVarValue(hppcdir);
-  lblTeste.Caption := hppcdir;
 
-  {Procura pela versão do TUGMAIN.EXE }
-  if (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tugmain.exe') = TRUE) then
-    begin
-      lbeTugmain.Text := 'Não encontrado!';
-    end
+  {Search for the TUGMAIN.EXE version file}
+  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tugmain.exe') = TRUE) then
+  begin
+    lbeTugmain.Text := 'Não encontrado!';
+  end
   else
-    begin
-      lbeTugmain.Text := GetVersion('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tugmain.exe');
-    end;
+  begin
+    lbeTugmain.Text := GetVersion('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tugmain.exe');
+  end;
 
-  {Procura pela versão do TMCMAIN.EXE (Manager) }
-  if (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tmcmain.exe') = TRUE) then
-    begin
-      lbeManager.Text := GetVersion('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tmcmain.exe');
-    end
+  {Search for the TMCMAIN.EXE (Manager) version file}
+  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tmcmain.exe') = TRUE) then
+  begin
+    lbeManager.Text := 'Não encontrado!';
+  end
   else
-    begin
-      lbeManager.Text := 'Não encontrado!';
-    end;
+  begin
+    lbeManager.Text := GetVersion('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tmcmain.exe');
+  end;
 
-  {Procura pela versão do TACMAIN.EXE (Client Desktop) }
-  if (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tacmain.exe') = TRUE) then
-    begin
-      lbeClientDesktop.Text := GetVersion('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tacmain.exe');
-    end
+  {Search for the TACMAIN.EXE (Client Desktop) version file}
+  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tacmain.exe') = TRUE) then
+  begin
+    lbeClientDesktop.Text := 'Não encontrado!';
+  end
   else
-    begin
-      lbeClientDesktop.Text := 'Não encontrado!';
-    end;
+  begin
+    lbeClientDesktop.Text := GetVersion('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tacmain.exe');
+  end;
 end;
 
 end.
