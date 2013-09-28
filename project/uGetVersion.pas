@@ -13,9 +13,9 @@ Purpose: Get file version from OSCC (OpenScape ContatCenter) programs:
 
   Executable name     Program Name
   --------------------------------
-  - Tugmain.exe       (tugmain)
-  - Tacmain.exe       (Client Desktop)
+  - Tugmain.exe       (Tugmain)
   - Tmcmain.exe       (Manager)
+  - Tacmain.exe       (Client Desktop)
 
   (When installed) is generally found at:
   C:\Program Files (x86)\Siemens\HiPath Procenter\
@@ -143,9 +143,10 @@ begin
   hppcdir := GetEnvVarValue(hppcdir);
 
   {Search for the TUGMAIN.EXE version file}
-  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tugmain.exe') = TRUE) then
+  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tugmain.exe') = TRUE
+       or fileExists('D:\Program Files (x86)\Enterprise\HiPath ProCenter\tugmain.exe') = TRUE) then
   begin
-    lbeTugmain.Text := 'Não encontrado!';
+    lbeTugmain.Text := 'Not found!';
   end
   else
   begin
@@ -153,9 +154,10 @@ begin
   end;
 
   {Search for the TMCMAIN.EXE (Manager) version file}
-  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tmcmain.exe') = TRUE) then
+  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tmcmain.exe') = TRUE
+      or  fileExists('D:\Program Files (x86)\Enterprise\HiPath ProCenter\tmcmain.exe') = TRUE ) then
   begin
-    lbeManager.Text := 'Não encontrado!';
+    lbeManager.Text := 'Not found!';
   end
   else
   begin
@@ -163,9 +165,10 @@ begin
   end;
 
   {Search for the TACMAIN.EXE (Client Desktop) version file}
-  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tacmain.exe') = TRUE) then
+  if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tacmain.exe') = TRUE
+      or  fileExists('D:\Program Files (x86)\Enterprise\HiPath ProCenter\tacmain.exe') = TRUE) then
   begin
-    lbeClientDesktop.Text := 'Não encontrado!';
+    lbeClientDesktop.Text := 'Not found!';
   end
   else
   begin

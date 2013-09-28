@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'OSCC Get Version'
-  ClientHeight = 432
-  ClientWidth = 702
+  ClientHeight = 407
+  ClientWidth = 527
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,32 +14,33 @@ object frmPrincipal: TfrmPrincipal
   Position = poScreenCenter
   OnCreate = FormCreate
   DesignSize = (
-    702
-    432)
+    527
+    407)
   PixelsPerInch = 120
   TextHeight = 18
   object lblTituloNotepad: TLabel
-    Left = 220
-    Top = 336
+    Left = 24
+    Top = 327
     Width = 157
     Height = 18
     Caption = 'A vers'#227'o do Notepad '#233':'
   end
   object lblNotepad: TLabel
-    Left = 310
-    Top = 359
-    Width = 67
+    Left = 24
+    Top = 351
+    Width = 157
     Height = 18
     Anchors = [akTop]
     Caption = 'lblNotepad'
   end
   object lblAutor: TLabel
-    Left = 504
-    Top = 396
+    Left = 329
+    Top = 371
     Width = 174
     Height = 18
     Anchors = [akRight, akBottom]
     Caption = 'Made by Victor Westmann'
+    ExplicitLeft = 504
     ExplicitTop = 438
   end
   object imgBanner: TImage
@@ -353,13 +354,14 @@ object frmPrincipal: TfrmPrincipal
   end
   object lbeSO: TLabeledEdit
     Left = 20
-    Top = 156
-    Width = 557
+    Top = 148
+    Width = 385
     Height = 26
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
     Margins.Bottom = 4
+    Anchors = [akLeft, akTop, akRight]
     EditLabel.Width = 134
     EditLabel.Height = 18
     EditLabel.Margins.Left = 4
@@ -374,16 +376,18 @@ object frmPrincipal: TfrmPrincipal
     EditLabel.Font.Style = [fsBold]
     EditLabel.ParentFont = False
     TabOrder = 0
+    ExplicitWidth = 557
   end
   object lbeTugmain: TLabeledEdit
     Left = 24
-    Top = 272
-    Width = 150
+    Top = 256
+    Width = 125
     Height = 26
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
     Margins.Bottom = 4
+    Anchors = [akLeft]
     EditLabel.Width = 63
     EditLabel.Height = 18
     EditLabel.Margins.Left = 4
@@ -398,16 +402,18 @@ object frmPrincipal: TfrmPrincipal
     EditLabel.Font.Style = [fsBold]
     EditLabel.ParentFont = False
     TabOrder = 1
+    ExplicitTop = 272
   end
   object lbeClientDesktop: TLabeledEdit
-    Left = 427
-    Top = 272
-    Width = 150
+    Left = 378
+    Top = 256
+    Width = 125
     Height = 26
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
     Margins.Bottom = 4
+    Anchors = [akRight]
     EditLabel.Width = 109
     EditLabel.Height = 18
     EditLabel.Margins.Left = 4
@@ -424,14 +430,15 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 2
   end
   object lbeManager: TLabeledEdit
-    Left = 227
-    Top = 272
-    Width = 150
+    Left = 211
+    Top = 256
+    Width = 125
     Height = 26
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
     Margins.Bottom = 4
+    Anchors = [akLeft]
     EditLabel.Width = 65
     EditLabel.Height = 18
     EditLabel.Margins.Left = 4
@@ -448,17 +455,20 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 3
   end
   object btnCopiarSO: TButton
-    Left = 589
-    Top = 153
+    Left = 417
+    Top = 143
     Width = 96
     Height = 32
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
     Margins.Bottom = 4
+    Anchors = [akRight]
     Cancel = True
     Caption = 'Ctrl + C'
     TabOrder = 4
     OnClick = btnCopiarSOClick
+    ExplicitLeft = 585
+    ExplicitTop = 153
   end
 end
