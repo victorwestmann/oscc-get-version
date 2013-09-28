@@ -40,7 +40,6 @@ type
     lbeClientDesktop: TLabeledEdit;
     lbeManager: TLabeledEdit;
     btnCopiarSO: TButton;
-    imgBanner: TImage;
     imgIcone: TImage;
     procedure FormCreate(Sender: TObject);
     procedure btnCopiarSOClick(Sender: TObject);
