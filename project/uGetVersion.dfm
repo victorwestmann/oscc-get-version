@@ -2,7 +2,7 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'OSCC Get Version'
-  ClientHeight = 327
+  ClientHeight = 275
   ClientWidth = 519
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,12 +15,12 @@ object frmPrincipal: TfrmPrincipal
   OnCreate = FormCreate
   DesignSize = (
     519
-    327)
+    275)
   PixelsPerInch = 96
   TextHeight = 14
   object lblTituloNotepad: TLabel
     Left = 19
-    Top = 277
+    Top = 225
     Width = 148
     Height = 14
     Margins.Left = 2
@@ -33,7 +33,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object lblNotepad: TLabel
     Left = 19
-    Top = 298
+    Top = 246
     Width = 148
     Height = 14
     Margins.Left = 2
@@ -47,7 +47,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object lblAutor: TLabel
     Left = 365
-    Top = 299
+    Top = 247
     Width = 145
     Height = 14
     Margins.Left = 2
@@ -336,7 +336,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object lbeTugmain: TLabeledEdit
     Left = 20
-    Top = 207
+    Top = 172
     Width = 97
     Height = 22
     Anchors = [akLeft]
@@ -354,7 +354,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object lbeClientDesktop: TLabeledEdit
     Left = 327
-    Top = 207
+    Top = 172
     Width = 97
     Height = 22
     Anchors = [akRight]
@@ -373,7 +373,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object lbeManager: TLabeledEdit
     Left = 157
-    Top = 207
+    Top = 172
     Width = 133
     Height = 22
     Anchors = [akLeft, akRight]
@@ -387,6 +387,7 @@ object frmPrincipal: TfrmPrincipal
     EditLabel.Font.Style = [fsBold]
     EditLabel.ParentFont = False
     TabOrder = 3
+    ExplicitTop = 207
     ExplicitWidth = 97
   end
   object btnCopiarSO: TButton
