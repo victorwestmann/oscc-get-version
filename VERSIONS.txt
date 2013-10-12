@@ -3,6 +3,14 @@
  ===============================
 
 
+ Version 0.0.1.2        2013-10-11
+ ---------------------------------
+ - Minor changes in UI
+ - Fixed program logic (yay!)
+ - Removed 1 hint
+ - Corrected UI alignment directives
+
+
  Version 0.0.1.1        2013-10-05
  ---------------------------------
  - Changed UI (program now uses Tabs)
@@ -13,6 +21,7 @@
  - Theme "Auric" enabled
  - Version is automatically displayed in 'About' tab
  - Other minor fixes
+
 
  Version 0.0.0.1        2013-09-15
  ---------------------------------

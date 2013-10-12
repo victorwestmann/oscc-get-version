@@ -28,7 +28,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.jpeg,
-  Vcl.ExtCtrls, Vcl.Imaging.pngimage, Vcl.ComCtrls, Vcl.XPMan;
+  Vcl.ExtCtrls, Vcl.Imaging.pngimage, Vcl.ComCtrls;
 
 type
   TfrmPrincipal = class(TForm)
@@ -41,10 +41,9 @@ type
     lbeClientDesktop: TLabeledEdit;
     lbeManager: TLabeledEdit;
     lbeTugmain: TLabeledEdit;
-    imgIcone: TImage;
     mmLicense: TMemo;
     btnClose: TButton;
-    Label1: TLabel;
+    lblTitle: TLabel;
     btnCopiarTugmain: TButton;
     btnCopiarManager: TButton;
     btnCopiarClientDesktop: TButton;
@@ -55,13 +54,19 @@ type
     lblVersion: TLabel;
     imgBrazil: TImage;
     lblMadeInBrazil: TLabel;
+    lblUpperTittle: TLabel;
+    lblSoftwaresUsed: TLabel;
+    lblWorksWith: TLabel;
+    imgTugmain: TImage;
+    imgManager: TImage;
+    imgClientDesktop: TImage;
+    imgOperatingSystem: TImage;
     procedure FormCreate(Sender: TObject);
     procedure btnCopiarSOClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
     procedure btnCopiarTugmainClick(Sender: TObject);
     procedure btnCopiarManagerClick(Sender: TObject);
     procedure btnCopiarClientDesktopClick(Sender: TObject);
-    procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -223,12 +228,46 @@ end;
 procedure TfrmPrincipal.FormCreate(Sender: TObject);
 var
   hppcdir   : string; //Executable Path!
+  ListDir   : TStringList;
+  i         : Integer;
+  FileFound : Boolean;
+  DirFound  : String;
+
 begin
-  {Enable progrtam to be blosed with ESC key}
-  KeyPreview := True;
+  {Gets the current Operating System info and displays it}
+  lbeSO.Text := TOSVersion.ToString;
+
+  FileFound := False;
+  ListDir   := TStringList.Create ;
+  ListDir.Add('D:\Program Files (x86)');
+  ListDir.Add('D:\Program Files');
+  ListDir.Add('C:\Program Files (x86)');
+  ListDir.Add('C:\Program Files');
+
+  {Almost sure this is not used anywhere...
+  hppcdir := GetEnvVarValue(hppcdir);}
+
+  for I := 0 to ListDir.Count-1 do
+  begin
+    if FileExists(ListDir[i]+'\Enterprise\HiPath ProCenter\tmcmain.exe') then
+    begin
+      FileFound := true;
+      DirFound  := ListDir[i]+'\Enterprise\HiPath ProCenter\tmcmain.exe';
+    end;
+  end;
+  if FileFound then
+    begin
+      if (fileExists(DirFound) = true) then lbeTugmain.Text := GetVersion(DirFound);
+    end
+  else
+    begin
+      lbeTugmain.Text := 'Not found!';
+    end;
+
+
+
 
   lbeSO.Text := TOSVersion.ToString;
-  hppcdir := GetEnvVarValue(hppcdir);
 
   {Search for the TUGMAIN.EXE version file}
   if not (fileExists('C:\Program Files (x86)\Enterprise\HiPath ProCenter\tugmain.exe') = TRUE
@@ -265,12 +304,6 @@ begin
 
   {Get software version here}
   lblVersion.Caption := lblVersion.Caption + ' - v' + GetBuildInfoAsString;
-end;
-
-{This is how to enable your application to be closed by pressing ESC}
-procedure TfrmPrincipal.FormKeyPress(Sender: TObject; var Key: Char);
-begin
-   if key = #27 then Close;
 end;
 
 

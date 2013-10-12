@@ -77,14 +77,14 @@
         <DCC_RemoteDebug>true</DCC_RemoteDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <Icon_MainIcon>osccGetVersion_Icon1.ico</Icon_MainIcon>
+        <Icon_MainIcon>imgs\icon.ico</Icon_MainIcon>
         <VerInfo_PreRelease>true</VerInfo_PreRelease>
         <VerInfo_Release>1</VerInfo_Release>
         <VerInfo_MajorVer>0</VerInfo_MajorVer>
-        <VerInfo_Build>1</VerInfo_Build>
+        <VerInfo_Build>2</VerInfo_Build>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=Westmann Inc;FileDescription=Executable;FileVersion=0.0.1.1;InternalName=pega versão;LegalCopyright=2013;LegalTrademarks=OSCCGetVersion, Siemens Enterprise, Westmann Inc.;OriginalFilename=getVersion;ProductName=OpenScape ContactCenter Get Version;ProductVersion=0.0.1.1;Comments=Made by Victor Westmann</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Westmann Inc;FileDescription=Executable;FileVersion=0.0.1.2;InternalName=pega versão;LegalCopyright=2013;LegalTrademarks=OSCCGetVersion, Siemens Enterprise, Westmann Inc.;OriginalFilename=getVersion;ProductName=OpenScape ContactCenter Get Version;ProductVersion=0.0.1.1;Comments=Made by Victor Westmann</VerInfo_Keys>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
