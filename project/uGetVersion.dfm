@@ -2,7 +2,7 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'OpenScape ContactCenter Get Version'
-  ClientHeight = 402
+  ClientHeight = 541
   ClientWidth = 617
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,23 +16,19 @@ object frmPrincipal: TfrmPrincipal
   OnCreate = FormCreate
   DesignSize = (
     617
-    402)
+    541)
   PixelsPerInch = 96
   TextHeight = 14
   object pgcOpcoesPrograma: TPageControl
     Left = 8
     Top = 8
     Width = 600
-    Height = 338
+    Height = 477
     ActivePage = TabSheet1
     Anchors = [akLeft, akTop, akRight, akBottom]
     TabOrder = 0
-    ExplicitWidth = 575
-    ExplicitHeight = 297
     object TabSheet1: TTabSheet
       Caption = '&Program  '
-      ExplicitWidth = 567
-      ExplicitHeight = 268
       object lblTitle: TLabel
         Left = 25
         Top = 31
@@ -58,6 +54,59 @@ object frmPrincipal: TfrmPrincipal
         Top = 205
         Width = 48
         Height = 48
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000300000
+          003008060000005702F9870000000473424954080808087C0864880000000970
+          48597300000DD700000DD70142289B780000001974455874536F667477617265
+          007777772E696E6B73636170652E6F72679BEE3C1A000005D44944415478DAED
+          9A5B70135518C7BF846D49D2A4D7A4E4DA120BA38C14679416F5C1CD93CEF8E8
+          233C7A99417CF4C5CB68F2A00F0EE30C33A20F9517B5600A49B94815759C2D48
+          8AA80D0263552C9DD28EBDDA144A49866EB27EE7B267B7453A41DA3194FE3BFF
+          F664F7E49CEFB7E7ECF9F6528BA669B0E4B2DBA3F8FB6D523C853E69EC89BD91
+          CD4697B22BCB2AC04A01D86BB747F00F313C93CFCB1B348D962F701365405306
+          20DFCD3F2ABBE734A59400A2C08F7AABAA420B9A68183DC4EBF459017EB58AAF
+          C41020BA0AB05400C9B565026053BE404D34CD4D74BEAA122E5455D1B2065AEC
+          CDC1A1D201E829B3088010C61E64F183CA4D940E86A03718D4BF12DBD5935A05
+          584A8008F055A85A03D9A6B1F275A713EDA275320E8732E0AE17AB1002282503
+          60D677A6D198F4FA60C2EBD577C576FDD81B5DCABEEE3F8017DA9211E0536544
+          72A2D9F400891BB5E9E457B267B09FD6C95555A36BE8F619B7571979F0D1EE85
+          6D3A7F3F0BAE3FCEEA1F95C4FE76653901C4D125C113888500B91B3974966D2E
+          B7A36DB46CB3322F14099E4070C51020BA0A703BBD1AFF3A6A010B05C854BA21
+          53E5E12D71A3D4B939345B3CAD6B24741983B130D3ED50A026BAF9C337E86F05
+          C091CFE3CB07F0CE973D620472BE1064BD7C5D2F70172909B383C433C4E88924
+          8C9C480880E31D89FB14605F9B918C3CF5E8756297F2C4E3ECD237D98D001606
+          50EE0BA0FDAC86C65DA4AC18BC9503FC7CEC28FA88DE4C2CCEA790E54C8F8807
+          C62600C627443CDA8BCF2BFF06208E2E099E40E847050168A37D3F1923E0F1FB
+          C0EDF7C27F9371917134D1853E2EFAFA989FC40820FAA2C18F09801802445706
+          407606A2FAD6E1BF409EB9CE86CC51015051C1B64F4D81F2673FD00454E77C4B
+          76AC8DD03AFEC606083436B24A5A81793199562A73FD431D87D19DB43C14082A
+          A9D66D2CD93DBC49867A0FED0B6667D137D8779D2E05FCC16E1D400C8154CEBC
+          507DBFA1FB58D926ED406FA7E5F0C68D10DEB091ED28A8CC8BC9CA4DEB8338E9
+          F71FE880F603715ABED4BC052E6D6E663B1EC1BF5B9A6F6DE7A6CABC22004E76
+          4B02A0B6B60075B5AC5532851C7C0AA5D30E48F7B20FB535CF515380A626083F
+          D074D7001DF143108F1FA4E5C1F561B8120ED3F26C6B2BDCD8D6C22A91E9C3A7
+          9075EA6FF41403D8FDBE4D00841B550837B020C809ECE627714FCA03A9D36E5A
+          0E353C0B4134AD8F1D85D787EF1A2079300989832C0F8CBA3D30E2667D4DCA4F
+          C1049A6A7C522CA3D29501900607560E40546FBFC23627974BF90829BBEB2B71
+          296537E0E3639272F1BC8D9EF59B37BF24D7AF7B8CD609861A2014D257219579
+          31CD5B854024BE64E23024126C159AAE702A03EB7CB4AF5CCB56590D04685F57
+          47C7E0DAD838ADB346BDA994E566D92A64CE03AFBC6CCE03218430DDBFEE64F7
+          AF69531EF0F943E0F5EB75CC77BF77A664E75148741E117DB57FC2F2C0936DFB
+          445FC3A3A330343222EA681F7E105D910064B8E89091E009049782000A05386B
+          020804C01BD0AF858A4864F3649C04C9CE2F10E09801F0990010F190E009841E
+          0F0228B70014A3B429BDFB823EF006BD0BE32952C688253BBB10C0B894685FCE
+          1B9A7B1E60EF9E3D02C0E17240858B25382BFFA1A1A92A359164B55253ADB132
+          1399A65CEFB9F390FE853DC3C678625DC7BB960F60C7F61D0240C5755F2DE881
+          4AD444B95C8E9AC82649D454E512339169C4A6AF4D43E66A468C40EA54F14FEC
+          EE4B8008F095E17600FD75FDF294638AD671661DE0CAB16966CF3B94BA39FE68
+          D104408227105C0A0228CB065054A39F1AF9A466B206AA27AAC5D1BDFCEEE5A2
+          8FEE2AC01D3574C64882500E3248AC6C9BB181FDBA9D6E76CDBA94C058403C9D
+          4EF1E4582A0051D0EF5F83DC44A62B8CD0B91004D3C6E5496A6709BD1FB8E701
+          CA3ACBC4F3A2C243056A2AD34BB2CA0B95507591BF23C38435F47A09BD23B37F
+          64BCA5545B7079DDCA0FFB3037511F37534C7BAF84DE52AE048008F05528FF74
+          5ED69AD89B7AB8C88DD2329A921F30DED42380523200F360C0180DF81ED83F4C
+          30C5B2AF95E8FF4AFC5F00FF00133CEC898E8AA73D0000000049454E44AE4260
+          82}
       end
       object imgManager: TImage
         Left = 220
@@ -636,8 +685,15 @@ object frmPrincipal: TfrmPrincipal
           BD6DF691BEC577B230A9ACAC846EDDBA5DD6E7FF2F95CC3805A3A80049000000
           0049454E44AE426082}
       end
+      object lblNumberFound: TLabel
+        Left = 25
+        Top = 408
+        Width = 88
+        Height = 14
+        Caption = 'lblNumberFound'
+      end
       object lbeTugmain: TLabeledEdit
-        Left = 81
+        Left = 79
         Top = 231
         Width = 97
         Height = 22
@@ -737,20 +793,43 @@ object frmPrincipal: TfrmPrincipal
         TabOrder = 7
         OnClick = btnCopiarClientDesktopClick
       end
+      object Button1: TButton
+        Left = 103
+        Top = 184
+        Width = 75
+        Height = 25
+        Caption = 'Button1'
+        TabOrder = 8
+        OnClick = Button1Click
+      end
+      object ListBox1: TListBox
+        Left = 25
+        Top = 312
+        Width = 416
+        Height = 81
+        ItemHeight = 14
+        TabOrder = 9
+      end
+      object ListBox2: TListBox
+        Left = 464
+        Top = 312
+        Width = 107
+        Height = 81
+        ItemHeight = 14
+        TabOrder = 10
+      end
     end
     object TabSheet2: TTabSheet
       Caption = '&License '
       ImageIndex = 1
-      ExplicitWidth = 567
-      ExplicitHeight = 268
       DesignSize = (
         592
-        309)
+        448)
       object mmLicense: TMemo
         Left = 3
         Top = 3
         Width = 586
-        Height = 303
+        Height = 442
         Anchors = [akLeft, akTop, akRight, akBottom]
         Lines.Strings = (
           'GNU GENERAL PUBLIC LICENSE'
@@ -1470,19 +1549,14 @@ object frmPrincipal: TfrmPrincipal
           'END OF TERMS AND CONDITIONS')
         ScrollBars = ssBoth
         TabOrder = 0
-        ExplicitWidth = 561
-        ExplicitHeight = 262
       end
     end
     object TabSheet3: TTabSheet
       Caption = '&About'
       ImageIndex = 2
-      ExplicitLeft = 2
-      ExplicitWidth = 567
-      ExplicitHeight = 268
       DesignSize = (
         592
-        309)
+        448)
       object imgProgram: TImage
         Left = 15
         Top = 14
@@ -3593,23 +3667,21 @@ object frmPrincipal: TfrmPrincipal
       object lblAuthor: TLabel
         Left = 293
         Top = 50
-        Width = 260
+        Width = 251
         Height = 14
         Anchors = [akLeft, akTop, akRight]
         Caption = 'Program created by Victor Westmann - 2013.'
-        ExplicitWidth = 251
       end
       object lblNote: TLabel
         Left = 293
         Top = 80
-        Width = 260
+        Width = 240
         Height = 42
         Anchors = [akLeft, akTop, akRight]
         Caption = 
           'Free software is much more than zero cost software. This softwar' +
           'e license is GPL v3 https://www.gnu.org/licenses/'
         WordWrap = True
-        ExplicitWidth = 251
       end
       object lblVersion: TLabel
         Left = 390
@@ -3646,16 +3718,15 @@ object frmPrincipal: TfrmPrincipal
       object lblMadeInBrazil: TLabel
         Left = 307
         Top = 243
-        Width = 140
+        Width = 131
         Height = 14
         Anchors = [akLeft, akTop, akRight]
         Caption = 'Software made in Brazil.'
-        ExplicitWidth = 131
       end
       object lblSoftwaresUsed: TLabel
         Left = 293
         Top = 128
-        Width = 260
+        Width = 257
         Height = 56
         Anchors = [akLeft, akTop, akRight]
         Caption = 
@@ -3663,12 +3734,11 @@ object frmPrincipal: TfrmPrincipal
           'scape, Gimp, Greenfish Icon Editor Pro. Paid software used: RAD ' +
           'Studio XE4 (Delphi).'
         WordWrap = True
-        ExplicitWidth = 251
       end
       object lblWorksWith: TLabel
         Left = 293
         Top = 200
-        Width = 260
+        Width = 236
         Height = 28
         Anchors = [akLeft, akTop, akRight]
         Caption = 'Software compatible with OpenScape Contact Center V7 and V8.'
@@ -3679,20 +3749,17 @@ object frmPrincipal: TfrmPrincipal
         Font.Style = [fsBold]
         ParentFont = False
         WordWrap = True
-        ExplicitWidth = 251
       end
     end
   end
   object btnClose: TButton
     Left = 8
-    Top = 362
+    Top = 501
     Width = 600
     Height = 25
     Anchors = [akLeft, akRight, akBottom]
     Caption = '&Close'
     TabOrder = 1
     OnClick = btnCloseClick
-    ExplicitTop = 321
-    ExplicitWidth = 575
   end
 end
